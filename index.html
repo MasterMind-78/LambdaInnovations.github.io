@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lambda Innovations</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #0a0a0a;
+            color: #fff;
+        }
+
+        /* Container */
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-top: 1rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            color: #f3f3f3;
+        }
+
+        header .logo {
+            width: 150px;
+            animation: logoBounce 2s infinite ease-in-out;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.8rem 2rem;
+            background: #ff5722;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #e64a19;
+        }
+
+        /* About Section */
+        .about {
+            background: #121212;
+            padding: 4rem 0;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(to right, #ff6a00, #ee0979);
+            padding: 4rem 0;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact a.email {
+            font-size: 1.2rem;
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: #0a0a0a;
+            padding: 1rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes logoBounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="Lambda Innovations Logo" class="logo">
+            <h1>Welcome to Lambda Innovations</h1>
+            <p>Innovating the Future, One Step at a Time</p>
+            <a href="#contact" class="btn">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2>Who We Are</h2>
+            <p>Lambda Innovations is dedicated to pushing the boundaries of innovation, blending creativity and technology to build the solutions of tomorrow. Explore our services and join us in shaping the future.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have a project or question? Reach out to us!</p>
+            <a href="mailto:lambdainnovations78@gmail.com" class="email">lambdainnovations78@gmail.com</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Lambda Innovations. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
